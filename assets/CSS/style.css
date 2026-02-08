@@ -1,0 +1,373 @@
+:root {
+    --ubc-navy: #002147;
+    --ubc-teal: #008080;
+    --ubc-gold: #FF8C00;
+    --ubc-white: #ffffff;
+    --transition: all 0.4s ease;
+}
+
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; line-height: 1.6; color: #333; }
+
+/* Base Styles */
+body { font-family: 'Segoe UI', Roboto, sans-serif; overflow-x: hidden; }
+a { text-decoration: none; color: inherit; }
+.text-navy { color: var(--ubc-navy); }
+.bg-navy { background-color: var(--ubc-navy); }
+.btn-gold { background-color: var(--ubc-gold); color: white; transition: var(--transition); }
+.btn-gold:hover { background-color: #e67e00; transform: scale(1.05); }
+.btn-teal { background-color: var(--ubc-teal); color: white; }
+
+/* Hero Section with Backdrop */
+.hero-section {
+    min-height: 90vh;
+    background: linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.8)), url('../img/watchmen-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Countdown Styling */
+.time-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    min-width: 100px;
+}
+
+/* Pillar Cards */
+.pillar-card {
+    background: white;
+    border-radius: 20px;
+    transition: var(--transition);
+}
+.pillar-card:hover { transform: translateY(-15px); }
+.pillar-card.highlight { background: var(--ubc-navy); color: white; }
+
+.divider-gold { width: 60px; height: 4px; background: var(--ubc-gold); border-radius: 2px; }
+
+
+/* Leader Cards Styling */
+.leader-img-container {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Makes the images perfectly square */
+    overflow: hidden;
+    border-radius: 50%; /* Circle profile looks more professional */
+    border: 3px solid var(--ubc-white);
+    outline: 2px solid var(--ubc-teal);
+    transition: var(--transition);
+}
+
+.leader-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures faces aren't stretched */
+    transition: transform 0.5s ease;
+}
+
+.leader-card:hover .leader-img-container {
+    outline-color: var(--ubc-gold);
+    transform: scale(1.05);
+}
+
+.leader-card:hover img {
+    transform: scale(1.1);
+}
+
+.uppercase { text-transform: uppercase; letter-spacing: 1px; }
+
+/* Growth Counter Styling */
+.bg-teal {
+    background-color: var(--ubc-teal) !important;
+}
+
+.counter-section {
+    padding: 80px 0;
+    background: linear-gradient(45deg, var(--ubc-navy), var(--ubc-teal));
+}
+
+.counter-box {
+    padding: 20px;
+    transition: var(--transition);
+}
+
+.counter-box h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+    color: var(--ubc-gold); /* Gold stands out against the Teal/Navy */
+}
+
+.counter-box p {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 768px) {
+    .counter-box h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* Highlight Card Effect */
+.highlight-card {
+    transition: var(--transition);
+    overflow: hidden;
+}
+.highlight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+.highlight-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Nav Link Active State */
+.nav-links a:hover {
+    color: var(--ubc-gold);
+}
+
+/* Form Styling */
+.form-control {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+.form-control:focus {
+    border-color: var(--ubc-teal);
+    box-shadow: none;
+}
+
+/* Event Detail Icons */
+.icon-circle {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.tracking-widest { letter-spacing: 3px; }
+
+.btn-outline-navy {
+    border: 2px solid var(--ubc-navy);
+    color: var(--ubc-navy);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-outline-navy:hover {
+    background-color: var(--ubc-navy);
+    color: white;
+}
+
+/* Sidebar divider effect */
+.border-gold { border-color: var(--ubc-gold) !important; }
+.text-teal { color: var(--ubc-teal); }
+
+
+
+/* Event Page Perfection */
+.event-hero {
+    padding-bottom: 120px !important; /* Space for the overlapping cards */
+}
+
+.mt-n5 {
+    margin-top: -100px !important; /* Pulls the content up into the hero area */
+}
+
+.flyer-container img {
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.flyer-container:hover img {
+    transform: scale(1.02);
+}
+
+.details-card {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.bg-gold { background-color: var(--ubc-gold) !important; color: white; }
+.btn-navy { background-color: var(--ubc-navy); color: white; }
+.btn-navy:hover { background-color: #001530; color: white; }
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+    .mt-n5 { margin-top: 0 !important; }
+    .event-hero { padding-bottom: 60px !important; }
+}
+
+/* Standardized Hero - Styled like the Home Page */
+.page-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.page-hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(0,33,71,0.8), rgba(0,33,71,0.7));
+    z-index: 1;
+}
+
+.page-hero .container { position: relative; z-index: 2; }
+
+/* Reusable Components */
+.divider-gold { width: 80px; height: 4px; background: var(--ubc-gold); margin: 15px auto; }
+.text-gold { color: var(--ubc-gold); }
+.bg-navy { background-color: var(--ubc-navy); }
+.btn-gold { background-color: var(--ubc-gold); color: white; border-radius: 50px; padding: 12px 30px; border: none; transition: var(--transition); }
+.btn-gold:hover { transform: scale(1.05); background: #e67e00; color: white; }
+
+/* Highlight Gallery */
+.gallery-card { border: none; border-radius: 15px; overflow: hidden; transition: var(--transition); }
+.gallery-card:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+
+/* Gallery Card Standout Style */
+.gallery-card {
+    border: 1px solid rgba(0,0,0,0.08) !important;
+    border-radius: 15px !important;
+    background: #ffffff;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+/* Image Zoom Effect */
+.img-zoom-container {
+    overflow: hidden;
+    height: 250px; /* Consistent height for all graphics */
+}
+
+.img-zoom-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures graphics aren't distorted */
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 33, 71, 0.15) !important;
+    border-color: var(--ubc-gold) !important;
+}
+
+.gallery-card:hover .img-zoom-container img {
+    transform: scale(1.1);
+}
+
+/* Download Button Style */
+.btn-download {
+    background-color: transparent;
+    color: var(--ubc-teal);
+    border: 1px solid var(--ubc-teal);
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: var(--ubc-teal);
+    color: white;
+}
+
+
+/* --- CUSTOM MEDIA QUERIES FOR PERFECTION --- */
+
+/* Small Devices (Mobile - stack one after another) */
+@media (max-width: 576px) {
+    .img-zoom-container {
+        height: 200px; /* Shorter images on mobile so user doesn't have to scroll forever */
+    }
+    .page-hero h1 {
+        font-size: 2.2rem; /* Scaled down so title doesn't break into 4 lines */
+    }
+    .gallery-card {
+        margin-bottom: 10px; /* Extra breathing room when stacked */
+    }
+}
+
+/* Medium Devices (Tablets - 2 by 2 grid) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .img-zoom-container {
+        height: 220px;
+    }
+}
+
+/* Wide Screens (Laptops/Desktops - 4 per row) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px; /* Keeps content from stretching too wide on huge monitors */
+    }
+    .img-zoom-container {
+        height: 280px; /* Taller, more impressive graphics on desktop */
+    }
+}
+
+
+/* Specific Centering for Small Screens (Max 768px) */
+@media (max-width: 768px) {
+    /* Centers the Hero content */
+    .page-hero .container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Centers the Highlight/Gallery Card content */
+    .gallery-card .card-body {
+        text-align: center;
+    }
+
+    /* Centers headers and paragraphs in sections */
+    section h2, 
+    section p, 
+    .detail-item {
+        text-align: center !important;
+        justify-content: center !important;
+    }
+
+    /* Adjusts the Icon-Text alignment in the Event Details */
+    .detail-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail-item i {
+        margin-right: 0 !important;
+        margin-bottom: 10px;
+    }
+
+    /* Centers the Footer columns */
+    footer .col-lg-4 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    footer .d-flex {
+        justify-content: center !important;
+    }
+                    }
+  
