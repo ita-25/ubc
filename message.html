@@ -1,0 +1,281 @@
+<!-- Image Gallery Section -->
+<section class="messages-gallery" id="gallery">
+    <div class="container">
+        <h2 class="section-title">Messages Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Image 3 to 10 - with touch/hover effects -->
+            <div class="message-card">
+                <div class="image-container">
+                    <img src="message3.jpg" alt="Spiritual Message 3" loading="lazy" class="message-img">
+                </div>
+                <div class="message-caption">Message 3 - Spiritual Insight</div>
+            </div>
+            
+            <div class="message-card">
+                <div class="image-container">
+                    <img src="message4.jpg" alt="Spiritual Message 4" loading="lazy" class="message-img">
+                </div>
+                <div class="message-caption">Message 4 - Divine Wisdom</div>
+            </div>
+            
+            <div class="message-card">
+                <div class="image-container">
+                    <img src="message5.jpg" alt="Spiritual Message 5" loading="lazy" class="message-img">
+                </div>
+                <div class="message-caption">Message 5 - Holy Guidance</div>
+            </div>
+            
+            <div class="message-card">
+                <div class="image-container">
+                    <img src="message6.jpg" alt="Spiritual Message 6" loading="lazy" class="message-img">
+                </div>
+                <div class="message-caption">Message 6 - Sacred Teachings</div>
+            </div>
+            
+            <div class="message-card">
+                <div class="image-container">
+                    <img src="message7.jpg" alt="Spiritual Message 7" loading="lazy" class="message-img">
+                </div>
+                <div class="message-caption">Message 7 - Faith Journey</div>
+            </div>
+            
+            <div class="message-card">
+                <div class="image-container">
+                    <img src="message8.jpg" alt="Spiritual Message 8" loading="lazy" class="message-img">
+                </div>
+                <div class="message-caption">Message 8 - Spiritual Growth</div>
+            </div>
+            
+            <div class="message-card">
+                <div class="image-container">
+                    <img src="message9.jpg" alt="Spiritual Message 9" loading="lazy" class="message-img">
+                </div>
+                <div class="message-caption">Message 9 - Divine Love</div>
+            </div>
+            
+            <div class="message-card">
+                <div class="image-container">
+                    <img src="message10.jpg" alt="Spiritual Message 10" loading="lazy" class="message-img">
+                </div>
+                <div class="message-caption">Message 10 - Eternal Truth</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Gallery Styles with Touch/Hover Effects */
+.messages-gallery {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Message Card with Touch/Hover Effects */
+.message-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+    position: relative;
+    border: 3px solid transparent;
+    transform: translateY(0);
+}
+
+/* Touch/Hover Effect */
+.message-card:hover,
+.message-card:active,
+.message-card:focus {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    border-color: #4CAF50;
+    z-index: 10;
+}
+
+/* For touch devices - active state */
+.message-card:active {
+    transform: translateY(-8px) scale(1.02);
+    transition: transform 0.1s ease;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    height: 220px;
+}
+
+.message-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s ease;
+    filter: brightness(0.95);
+}
+
+/* Image effect on hover/touch */
+.message-card:hover .message-img,
+.message-card:active .message-img {
+    transform: scale(1.1);
+    filter: brightness(1.05) contrast(1.1);
+}
+
+.message-caption {
+    padding: 20px 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    transition: all 0.3s ease;
+    border-top: 2px solid #f0f0f0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Bold effect on caption */
+.message-card:hover .message-caption,
+.message-card:active .message-caption {
+    font-weight: 700;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    color: #1a237e;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Add a subtle pulse animation on touch */
+@keyframes touchPulse {
+    0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(76, 175, 80, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+}
+
+.message-card:active {
+    animation: touchPulse 0.5s ease;
+}
+
+/* Mobile-specific touch improvements */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .message-card {
+        -webkit-tap-highlight-color: transparent; /* Remove blue tap highlight on mobile */
+    }
+    
+    /* Enhance touch feedback on mobile */
+    .message-card:active {
+        transform: translateY(-5px) scale(1.02);
+    }
+}
+
+/* For accessibility - keyboard navigation */
+.message-card:focus-visible {
+    outline: 3px solid #4CAF50;
+    outline-offset: 3px;
+}
+
+/* Loading state animation */
+.message-card.loading {
+    animation: shimmer 1.5s infinite linear;
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+/* Optional: Add a subtle glow effect */
+.message-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 16px;
+    box-shadow: inset 0 0 20px rgba(255,255,255,0.1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.message-card:hover::after {
+    opacity: 1;
+}
+
+/* Desktop-only enhancements (screen > 1024px) */
+@media (min-width: 1024px) {
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        gap: 30px;
+    }
+    
+    .message-card:hover {
+        transform: translateY(-12px) scale(1.03);
+        box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    }
+    
+    /* Slower, more dramatic transitions for desktop */
+    .message-card {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+}
+
+</style>
+
+<script>
+// Optional JavaScript for enhanced touch feedback
+document.addEventListener('DOMContentLoaded', function() {
+    const messageCards = document.querySelectorAll('.message-card');
+    
+    // Add touch feedback class
+    messageCards.forEach(card => {
+        card.addEventListener('touchstart', function() {
+            this.classList.add('touching');
+        });
+        
+        card.addEventListener('touchend', function() {
+            this.classList.remove('touching');
+        });
+        
+        // Optional: Click to show modal or enlarge image
+        card.addEventListener('click', function() {
+            // You can add functionality here, like:
+            // - Open modal with larger image
+            // - Play audio message
+            // - Show detailed description
+            console.log('Message clicked:', this.querySelector('.message-caption').textContent);
+        });
+    });
+});
+</script>
