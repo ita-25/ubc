@@ -1,0 +1,40 @@
+
+<footer class="bg-navy text-white pt-5 pb-3">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <h4 class="fw-bold text-gold">U.B.C</h4>
+                <p class="small opacity-75 mt-3">Raising men to become like Jesus. Join us as we raise the banner of righteousness across the nations.</p>
+                <div class="d-flex gap-3 mt-4">
+                    <a href=https://chat.whatsapp.com/GcOOL61pmjzB9DvTjnbqrQ?mode=gi_t" class="text-white fs-4"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://wa.me/2349127853828" class="text-white fs-4"><i class="bi bi-chat-dots"></i></a>
+                    <a href="tel:09019384166" class="text-white fs-4"><i class="bi bi-telephone"></i></a>
+                    
+                </div>
+           
+            <div class="col-lg-4 ps-lg-5">
+                <h5 class="fw-bold mb-4">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="about.html" class="text-white text-decoration-none opacity-75">Our Vision</a></li>
+                    <li class="mb-2"><a href="bible-study.html" class="text-white text-decoration-none opacity-75">Bible Study</a></li>
+                    <li class="mb-2"><a href="highlights.html" class="text-white text-decoration-none opacity-75">Resources</a></li>
+                    <li class="mb-2"><a href="contact.html" class="text-white text-decoration-none opacity-75">Discipleship</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4">
+                <h5 class="fw-bold mb-4">Visit Us</h5>
+                <p class="small opacity-75"><i class="bi bi-geo-alt-fill text-gold me-2"></i> 1 Adetunberu Street, Olowora, Lagos, Nigeria.</p>
+                <p class="small opacity-75"><i class="bi bi-envelope-fill text-gold me-2"></i> info@unitedbodyofchrist.org</p>
+            </div>
+        </div>
+        
+          <div class="container">
+            <p class="mb-4">Stay blessed. Whenever we have an instruction from God, we send it to the announcement platform.</p>
+           
+            <hr class="my-4 opacity-25">
+            <p class="small text-secondary">&copy; 2026 United Body of Christ. Built with Excellence @ pemstudio</p>
+        </div>
+        
+    
+    </div>
