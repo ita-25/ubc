@@ -1,0 +1,270 @@
+diff --git a/assets/Js/main.js b/assets/Js/main.js
+index 519f2ba..0d30cd4 100644
+--- a/assets/Js/main.js
++++ b/assets/Js/main.js
+@@ -1,6 +1,6 @@
+ // Universal Countdown Logic
+ const countdown = () => {
+-    const countDate = new Date("March 7, 2026 09:00:00").getTime();
++    const countDate = new Date("October 10, 2026 09:00:00").getTime();
+     const now = new Date().getTime();
+     const gap = countDate - now;
+ 
+diff --git a/events.html b/events.html
+index 29a6985..a00a564 100644
+--- a/events.html
++++ b/events.html
+@@ -5,28 +5,28 @@
+ 
+  <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>United Body of Christ upcoming Program | Watchmen</title>
++    <title>United Body of Christ upcoming Program | The Ancient Mantle</title>
+ 
+ <!-- Primary Meta Tags -->
+-<meta name="title" content="United Body of Christ upcoming Program | Watchman">
+-<meta name="description" content="Raising the Banner of Righteousness (Jeremiah 1:10).">
++<meta name="title" content="United Body of Christ upcoming Program | The Ancient Mantle">
++<meta name="description" content="The Waiting Room 2026: The Ancient Mantle. Come, let us contend for the Ancient Mantle.">
+ 
+ <!-- Open Graph / Facebook -->
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://unitedbc.vercel.app/events.html">
+-<meta property="og:title" content="United Body of Christ upcoming Program | Watchman">
+-<meta property="og:description" content="Coming up on the 7th of March 2026.">
+-<meta property="og:image" content="https://unitedbc.vercel.app/watchmen-banner.jpg">
++<meta property="og:title" content="United Body of Christ upcoming Program | The Ancient Mantle">
++<meta property="og:description" content="Coming up on the 10th of October 2026, 9:00 AM.">
++<meta property="og:image" content="https://unitedbc.vercel.app/assets/img/ancient-mantle-banner.jpg">
+ <!-- Recommended: Add image dimensions -->
+-<meta property="og:image:width" content="1200">
+-<meta property="og:image:height" content="630">
++<meta property="og:image:width" content="1054">
++<meta property="og:image:height" content="1280">
+ 
+ <!-- Twitter -->
+ <meta property="twitter:card" content="summary_large_image">
+ <meta property="twitter:url" content="https://unitedbc.vercel.app/">
+-<meta property="twitter:title" content="United Body of Christ upcoming Program | Watchmen">
+-<meta property="twitter:description" content="Raising the Banner of Righteousness (Jeremiah 1:10).">
+-<meta property="twitter:image" content="https://unitedbc.vercel.app/watchmen-banner.jpg">
++<meta property="twitter:title" content="United Body of Christ upcoming Program | The Ancient Mantle">
++<meta property="twitter:description" content="The Waiting Room 2026: The Ancient Mantle. Come, let us contend for the Ancient Mantle.">
++<meta property="twitter:image" content="https://unitedbc.vercel.app/assets/img/ancient-mantle-banner.jpg">
+ 
+ 
+ <!-- Favicon - Fixed to use absolute path -->
+@@ -66,11 +66,11 @@
+     </header>
+     
+     <main>
+-    <section class="event-hero py-5 text-white" style="background: linear-gradient(rgba(0,33,71,0.9), rgba(0,33,71,0.9)), url('assets/img/watchmen-banner.jpg') center/cover;">
++    <section class="event-hero py-5 text-white" style="background: linear-gradient(rgba(0,33,71,0.9), rgba(0,33,71,0.9)), url('assets/img/ancient-mantle-banner.jpg') center/cover;">
+         <div class="container text-center py-5">
+-            <span class="badge bg-gold mb-3 px-3 py-2 uppercase tracking-widest">Major Program</span>
+-            <h1 class="display-3 fw-bold">WATCH MEN</h1>
+-            <p class="lead italic opacity-75">"Behold, I have this day set thee over the nations..." — Jeremiah 1:10</p>
++            <span class="badge bg-gold mb-3 px-3 py-2 uppercase tracking-widest">The Waiting Room '2026 &middot; 5 Hrs Prayer Charge</span>
++            <h1 class="display-3 fw-bold">THE ANCIENT MANTLE</h1>
++            <p class="lead italic opacity-75">Come! Let us contend for the Ancient Mantle. Hosted by DPR Teens.</p>
+             
+             <div id="countdown" class="d-flex justify-content-center gap-3 my-5">
+                 </div>
+@@ -82,7 +82,7 @@
+             <div class="row g-4 mt-n5">
+                 <div class="col-lg-6">
+                     <div class="flyer-container shadow-lg rounded-4 overflow-hidden">
+-                        <img src="assets/img/watchmen-banner.jpg" class="img-fluid" alt="Watch Men Event Flyer">
++                        <img src="assets/img/ancient-mantle-banner.jpg" class="img-fluid" alt="The Ancient Mantle Event Flyer">
+                     </div>
+                 </div>
+                 
+@@ -96,7 +96,7 @@
+                             <i class="bi bi-clock-fill text-gold fs-3 me-3"></i>
+                             <div>
+                                 <h5 class="mb-1 fw-bold">Time & Date</h5>
+-                                <p class="text-muted">Saturday, 7th March 2026<br>Morning Session: 9:00 AM</p>
++                                <p class="text-muted">Saturday, 10th October 2026<br>Morning Session: 9:00 AM (GMT+1)</p>
+                             </div>
+                         </div>
+ 
+@@ -104,7 +104,7 @@
+                             <i class="bi bi-geo-alt-fill text-gold fs-3 me-3"></i>
+                             <div>
+                                 <h5 class="mb-1 fw-bold">Venue</h5>
+-                                <p class="text-muted">1 Adetunberu Street, Olowora, Lagos<br><span class="small">(Near Olowora Primary Health Center)</span></p>
++                                <p class="text-muted">1, Adetuberu Street, Olowora<br><span class="small">Ojodu Berger, Lagos</span></p>
+                             </div>
+                         </div>
+ 
+@@ -113,13 +113,21 @@
+                             <div>
+                                 <h5 class="mb-1 fw-bold">Host & Ministers</h5>
+ 
+-<p class="text-muted">Holy Spirit (Chief Host)<br>Ministration by; Kareem Benjamin, Divine Favor, Marvelous Oyamenda, Daniel Light,Wahab Pelumi, and David Joseph</p>
++<p class="text-muted">Host: DPR Teens<br>Ministration by: Marvellous Oyamenda, Udoh David, Divine Olaoluwa, Divine Favor, Shayo, Kareem Benjamin, and Tobiloba</p>
++                            </div>
++                        </div>
++
++                        <div class="detail-item d-flex align-items-start mb-4">
++                            <i class="bi bi-fire text-gold fs-3 me-3"></i>
++                            <div>
++                                <h5 class="mb-1 fw-bold">Special Feature</h5>
++                                <p class="text-muted">5 Hrs Prayer Charge &mdash; Refreshments and lots more!</p>
+                             </div>
+                         </div>
+ 
+                         <div class="mt-5 d-grid gap-2">
+-                            <a href="https://wa.me/2349019384166" class="btn btn-navy btn-lg rounded-pill">Register via WhatsApp</a>
+-                            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=WATCH+MEN:+The+Global+Gathering&details=A+power-packed+program+inspired+by+the+HOLY+GHOST+to+give+us+a+Spiritual+Awakening,+Spiritual+Quickening,+and+SALVATION.+%0A%0AEnquiries:+09019384166&location=1+Adetunberu+Street,+Olowora,+Lagos&dates=20260307T080000Z%2F20260307T130000Z" 
++                            <a href="https://wa.me/2347051110838" class="btn btn-navy btn-lg rounded-pill">Register via WhatsApp</a>
++                            <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=THE+ANCIENT+MANTLE+-+The+Waiting+Room+2026&details=Come!+Let+us+contend+for+the+Ancient+Mantle.+5+Hrs+Prayer+Charge,+hosted+by+DPR+Teens.+%0A%0AEnquiries:+%2B234+705+111+0838+%2F+%2B234+808+946+7955&location=1%2C+Adetuberu+Street%2C+Olowora%2C+Ojodu+Berger%2C+Lagos&dates=20261010T080000Z%2F20261010T130000Z" 
+    target="_blank" 
+    class="btn btn-outline-navy w-100 rounded-pill py-2">
+     <i class="bi bi-google me-2"></i> Add to Google Calendar
+@@ -148,32 +156,32 @@
+         <div class="row justify-content-center">
+             <div class="col-lg-8">
+                 <div class="waiting-room-box p-4 border border-gold rounded-4 mb-5">
+-                    <h3 class="text-gold fw-bold mb-0">WAITING ROOM</h3>
+-                    <p class="fs-4 mb-0">Theme: <span class="fw-bold">WATCH MEN</span></p>
+-                    <p class="opacity-75">March 7th, 2026 | 9:00 AM Prompt</p>
++                    <h3 class="text-gold fw-bold mb-0">THE WAITING ROOM '2026</h3>
++                    <p class="fs-4 mb-0">Theme: <span class="fw-bold">THE ANCIENT MANTLE</span></p>
++                    <p class="opacity-75">October 10th, 2026 | 9:00 AM Prompt</p>
+                 </div>
+ 
+                 <p class="fs-5 mb-4 px-md-5">
+-                    This is a power-packed program inspired by the <span class="text-gold fw-bold">HOLY GHOST</span> to give us a 
+-                    <span class="text-teal-light">Spiritual Awakening</span>, <span class="text-teal-light">Spiritual Quickening</span>, 
+-                    and <span class="text-teal-light">SALVATION</span>.
++                    Join us for a <span class="text-gold fw-bold">5 Hrs Prayer Charge</span>, hosted by DPR Teens, as we 
++                    <span class="text-teal-light">contend</span> for the <span class="text-teal-light">Ancient Mantle</span> 
++                    together in prayer and the Word.
+                 </p>
+ 
+-                <h3 class="fw-bold mb-4 italic text-gold">"Are you ready to catch fire?"</h3>
++                <h3 class="fw-bold mb-4 italic text-gold">"Come! Let us contend for the Ancient Mantle."</h3>
+                 
+                 <p class="lead mb-5 opacity-75">
+-                    <em>I assure you that Jesus has the capacity of healing all.</em>
++                    <em>Refreshments and lots more await you.</em>
+                 </p>
+ 
+                 <div class="cta-area">
+                     <p class="mb-3 fw-bold">For enquiries, tap below:</p>
+                     <div class="d-flex flex-wrap justify-content-center gap-3">
+-                        <a href="https://wa.me/2347084680630?text=Hello%20%F0%9F%91%8B%20i%2C%20I%20want%20to%20make%20an%20enquiry%20for%20the%20program%20watch%20Men" 
++                        <a href="https://wa.me/2347051110838?text=Hello%20%F0%9F%91%8B%2C%20I%20want%20to%20make%20an%20enquiry%20for%20the%20program%20The%20Ancient%20Mantle" 
+                            class="btn btn-gold btn-lg rounded-pill px-4">
+                            <i class="bi bi-whatsapp me-2"></i> WhatsApp Enquiry
+                         </a>
+-                        <a href="tel:09127853828" class="btn btn-outline-light btn-lg rounded-pill px-4">
+-                           <i class="bi bi-telephone-fill me-2"></i> Call 09019384166
++                        <a href="tel:+2347051110838" class="btn btn-outline-light btn-lg rounded-pill px-4">
++                           <i class="bi bi-telephone-fill me-2"></i> Call +234 705 111 0838
+                         </a>
+                     </div>
+                 </div>
+@@ -214,19 +222,19 @@
+             <div class="col-6 col-md-3">
+                 <div class="leader-card text-center">
+                     <div class="leader-img-container mb-3 shadow">
+-                        <img src="assets/img/host.jpg" alt="Bro. Udoh David" class="img-fluid">
++                        <img src="assets/img/minister-marvellous.jpg" alt="Marvellous Oyamenda" class="img-fluid">
+                     </div>
+-                    <h5 class="fw-bold mb-0">Bro. Udoh David</h5>
+-                    <small class="text-gold fw-bold uppercase">Host</small>
++                    <h5 class="fw-bold mb-0">Marvellous Oyamenda</h5>
++                    <small class="text-teal">Minister</small>
+                 </div>
+             </div>
+ 
+             <div class="col-6 col-md-3">
+                 <div class="leader-card text-center">
+                     <div class="leader-img-container mb-3 shadow">
+-                        <img src="assets/img/minister1.jpg" alt="Mins. Kareem Benjamin" class="img-fluid">
++                        <img src="assets/img/minister-udoh.jpg" alt="Udoh David" class="img-fluid">
+                     </div>
+-                    <h5 class="fw-bold mb-0">Kareem Benjamin</h5>
++                    <h5 class="fw-bold mb-0">Udoh David</h5>
+                     <small class="text-teal">Minister</small>
+                 </div>
+             </div>
+@@ -234,28 +242,29 @@
+             <div class="col-6 col-md-3">
+                 <div class="leader-card text-center">
+                     <div class="leader-img-container mb-3 shadow">
+-                        <img src="assets/img/evang.jpg" alt="Evang. Divine Favor" class="img-fluid">
++                        <img src="assets/img/minister-divine-o.jpg" alt="Divine Olaoluwa" class="img-fluid">
+                     </div>
+-                    <h5 class="fw-bold mb-0">Divine Favor</h5>
+-                    <small class="text-teal">Evangelist</small>
++                    <h5 class="fw-bold mb-0">Divine Olaoluwa</h5>
++                    <small class="text-teal">Minister</small>
+                 </div>
+             </div>
+ 
+             <div class="col-6 col-md-3">
+                 <div class="leader-card text-center">
+                     <div class="leader-img-container mb-3 shadow">
+-                        <img src="assets/img/revivalist.jpg" alt="Revivalist Marvelous" class="img-fluid">
++                        <img src="assets/img/minister-divine-favor.jpg" alt="Divine Favor" class="img-fluid">
+                     </div>
+-                    <h5 class="fw-bold mb-0">Marvelous Oyamenda</h5>
+-                    <small class="text-teal">Revivalist</small>
++                    <h5 class="fw-bold mb-0">Divine Favor</h5>
++                    <small class="text-teal">Minister</small>
+                 </div>
+             </div>
++
+ <div class="col-6 col-md-3">
+                 <div class="leader-card text-center">
+                     <div class="leader-img-container mb-3 shadow">
+-                        <img src="assets/img/minister2.jpg" alt="Mins. Daniel Light" class="img-fluid">
++                        <img src="assets/img/minister-shayo.jpg" alt="Shayo" class="img-fluid">
+                     </div>
+-                    <h5 class="fw-bold mb-0">Daniel Light</h5>
++                    <h5 class="fw-bold mb-0">Shayo</h5>
+                     <small class="text-teal">Minister</small>
+                 </div>
+             </div>
+@@ -263,9 +272,9 @@
+ <div class="col-6 col-md-3">
+                 <div class="leader-card text-center">
+                     <div class="leader-img-container mb-3 shadow">
+-                        <img src="assets/img/minister3.jpg" alt="Mins. Wahab Pelumi" class="img-fluid">
++                        <img src="assets/img/minister-kareem.jpg" alt="Kareem Benjamin" class="img-fluid">
+                     </div>
+-                    <h5 class="fw-bold mb-0">Wahab Pelumi</h5>
++                    <h5 class="fw-bold mb-0">Kareem Benjamin</h5>
+                     <small class="text-teal">Minister</small>
+                 </div>
+             </div>
+@@ -273,9 +282,9 @@
+ <div class="col-6 col-md-3">
+                 <div class="leader-card text-center">
+                     <div class="leader-img-container mb-3 shadow">
+-                        <img src="assets/img/minister4.jpg" alt="Mins. David Joseph" class="img-fluid">
++                        <img src="assets/img/minister-tobiloba.jpg" alt="Tobiloba" class="img-fluid">
+                     </div>
+-                    <h5 class="fw-bold mb-0">David Joseph</h5>
++                    <h5 class="fw-bold mb-0">Tobiloba</h5>
+                     <small class="text-teal">Minister</small>
+                 </div>
+             </div>
+diff --git a/index.html b/index.html
+index fdd0c48..2757084 100644
+--- a/index.html
++++ b/index.html
+@@ -69,8 +69,8 @@
+     <section id="home" class="hero-section d-flex align-items-center text-center text-white">
+         <div class="container py-5">
+             <h1 class="display-3 fw-bold mb-3">United Body Of Christ</h1>
+-             <h2>Upcoming program Watch Men</h2>
+-            <p class="lead mb-4">"Jeremiah 1:10" — Raising the Banner of Righteousness</p>
++             <h2>Upcoming Program: The Ancient Mantle</h2>
++            <p class="lead mb-4">The Waiting Room '2026 — Oct 10th, 9:00 AM | Hosted by DPR Teens</p>
+             
+             <div id="countdown" class="d-flex justify-content-center gap-2 gap-md-4 my-5">
+                 <div class="time-box">
